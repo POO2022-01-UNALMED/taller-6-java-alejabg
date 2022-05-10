@@ -7,7 +7,7 @@ public class Fabricante{
     private String nombre;
     private Pais pais;
     private static ArrayList<Fabricante> listaFabricantes = new ArrayList<>();
-    private int vehiculos;
+    int vehiculos;
    
     public Fabricante(String nombre, Pais pais){
         this.nombre = nombre;
