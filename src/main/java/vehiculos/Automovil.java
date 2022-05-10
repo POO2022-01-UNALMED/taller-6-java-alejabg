@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class Automovil extends Vehiculo{
 
-    private static ArrayList<Automovil> listaAutomoviles = new ArrayList<>();
+    private static ArrayList<Automovil> listaAutomoviles = new ArrayList<Automovil>();
     private  int puestos;
   
     public Automovil(String placa, String nombre, int precio, int peso, Fabricante fabricante, int puestos) {

@@ -5,7 +5,7 @@ import java.util.ArrayList;
 public class Camion extends Vehiculo{
     
     private int ejes;
-    private static ArrayList<Camion> listaCamiones = new ArrayList<>();
+    private static ArrayList<Camion> listaCamiones = new ArrayList<Camion>();
 
     public Camion(String placa, String nombre, int precio, int peso, Fabricante fabricante, int ejes) {
         super(placa, 2, 80, nombre, precio, peso, "4X2", fabricante);

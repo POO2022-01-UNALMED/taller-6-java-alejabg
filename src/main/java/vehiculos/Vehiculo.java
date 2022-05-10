@@ -13,7 +13,7 @@ public class Vehiculo {
     private String traccion;
     private Fabricante fabricante;
     private static int cantidadVehiculos;
-    private static ArrayList<Vehiculo> listaVehiculos = new ArrayList<>();
+    private static ArrayList<Vehiculo> listaVehiculos = new ArrayList<Vehiculo>();
 
     public Vehiculo(String placa, int puertas, int velocidadMaxima, String nombre, int precio, int peso, String traccion, Fabricante fabricante) {
         this.placa = placa;
@@ -25,6 +25,8 @@ public class Vehiculo {
         this.traccion = traccion;
         this.fabricante = fabricante;
         Vehiculo.cantidadVehiculos += 1;
+        this.fabricante.vehiculos++;
+		this.fabricante.getPais().vehiculos++;
         }
     
     public static String vehiculosPorTipo() {
