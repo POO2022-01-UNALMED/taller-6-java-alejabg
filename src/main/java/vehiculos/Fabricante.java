@@ -12,19 +12,17 @@ public class Fabricante{
     public Fabricante(String nombre, Pais pais){
         this.nombre = nombre;
         this.pais = pais;
-        Fabricante.listaFabricantes.add(this);
+        listaFabricantes.add(this);
         this.vehiculos = 0;
     }
 
     public static Fabricante fabricaMayorVentas(){
-		Fabricante ganador = new Fabricante(null, null);
-		
+		Fabricante ganador = new Fabricante(null, null);	
 		for(Fabricante fabricante: listaFabricantes) {
 			if(ganador.vehiculos < fabricante.vehiculos) {
 				ganador = fabricante;
 			}
-		}
-		
+		}	
 		return ganador;
     }
 
