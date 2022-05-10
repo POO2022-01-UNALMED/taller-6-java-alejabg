@@ -6,7 +6,7 @@ public class Fabricante{
     
     private String nombre;
     private Pais pais;
-    private static ArrayList<Fabricante> listaFabricantes = new ArrayList<>();
+    private static ArrayList<Fabricante> listaFabricantes = new ArrayList<Fabricante>();
     int vehiculos;
    
     public Fabricante(String nombre, Pais pais){

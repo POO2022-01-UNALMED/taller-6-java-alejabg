@@ -5,7 +5,7 @@ import java.util.ArrayList;
 public class Pais {
 
     private String nombre;
-    private static ArrayList<Pais> listaPaises = new ArrayList<>();
+    private static ArrayList<Pais> listaPaises = new ArrayList<Pais>();
     int vehiculos;
 
     public Pais(String nombre) {
